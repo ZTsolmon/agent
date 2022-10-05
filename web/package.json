@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "concurrently": "^7.4.0",
+    "express": "^4.17.2",
+    "express-fileupload": "^1.4.0",
+    "express-session": "^1.17.2",
+    "jimp": "^0.16.2",
+    "jsqr": "^1.4.0",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.20",
+    "qrcode": "^1.5.1",
+    "qrcode-decoder": "^0.3.1",
+    "qrcode-reader": "^1.0.4",
+    "randomstring": "^1.2.2"
+  },
+  "name": "login",
+  "version": "1.0.0",
+  "main": "login.js",
+  "scripts": {
+    "start": "node server --scripts-prepend-node-path",
+    "server": "nodemon server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

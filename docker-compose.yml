@@ -1,0 +1,15 @@
+services:
+  web:
+    build: ./web
+    ports:
+     - "3000:3000"
+    depends_on:
+     - db
+    environment:
+     - DATABASE_HOST=db
+  db:
+    build: ./db
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    ports:
+      - 3306:3306
