@@ -7,6 +7,6 @@ COPY . /app
 WORKDIR /app/client/
 RUN npm install 
 WORKDIR /app/
-RUN npm instal
+RUN npm install
 EXPOSE 3000
 CMD ["sh", "run.sh"]
