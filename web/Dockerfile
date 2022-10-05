@@ -3,7 +3,7 @@ FROM node:lts-buster
 RUN apt-get update
 
 # Install service
-COPY . /appl
+COPY . /app
 WORKDIR /app/client/
 RUN npm install 
 WORKDIR /app/
